@@ -4,9 +4,9 @@ import HomeScreen from './src/screens/HomeScreen';
 import ComponentsScreen from './src/screens/ComponentsScreen';
 import ListScreen from './src/screens/ListScreen';
 import ImageScreen from './src/screens/imageScreen';
-import CounterScreen from './src/screens/CounterScreen';
+import CounterScreenReducer from './src/screens/CounterScreenReducer';
 import ColourScreen from './src/screens/ColourScreen';
-import SquareScreen from './src/screens/SqaureScreen';
+import SquareScreenReducer from './src/screens/SqaureScreenReducer';
 
 const navigator = createStackNavigator(
   {
@@ -14,9 +14,9 @@ const navigator = createStackNavigator(
     Components: ComponentsScreen,
     List: ListScreen,
     Image: ImageScreen,
-    Counter: CounterScreen,
+    Counter: CounterScreenReducer,
     Colour: ColourScreen,
-    Sqaure: SquareScreen,
+    Sqaure: SquareScreenReducer,
   },
   {
     initialRouteName: 'Home',
